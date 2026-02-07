@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra Desordenada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PALABRA DESORDENADA</h1>
+        </header>
+        
+        <div class="timer-container">
+            <div class="timer" id="timer">01:00</div>
+        </div>
+        
+        <div class="word-info">
+            <div class="word-category" id="category">Categoría: -</div>
+            <div class="word-length">Longitud: <span id="word-length">0</span> letras</div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="start-btn" class="btn btn-start">Nueva Palabra</button>
+            <button id="hint-btn" class="btn btn-hint" disabled>Mostrar Palabra</button>
+            <button id="next-btn" class="btn btn-next" disabled>Siguiente</button>
+        </div>
+        
+        <div class="game-board" id="game-board">
+            <!-- Las letras desordenadas aparecerán aquí -->
+        </div>
+        
+        <div class="word-display">
+            <div class="original-word" id="original-word">
+                <!-- La palabra ordenada aparecerá aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
